@@ -39,7 +39,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run docs && rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "docs": "react-scripts build && mv ./build ./docs",
+    "docs": "rm -rf docs && react-scripts build && mv ./build ./docs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
