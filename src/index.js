@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import LaneLayout from "./LaneLayout";
+import LaneLayout from "./lib/LaneLayout";
 import ItemGenerator from "./ItemGenerator";
 import ItemRenderer from "./ItemRenderer";
 

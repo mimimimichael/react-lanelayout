@@ -3,24 +3,37 @@
   "version": "0.1.0",
   "description": "",
   "keywords": [],
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mimimimichael/react-lanelayout"
+  },
   "dependencies": {
     "normalize-wheel": "1.0.1",
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
-    "react-motion": "0.5.2",
     "react-resize-detector": "3.1.2",
-    "react-visibility-sensor": "latest"
+    "react-visibility-sensor": "4.1.1"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4",
-    "sinon": "6.3.4",
-    "enzyme": "3.6.0",
-    "enzyme-adapter-react-16": "1.5.0"
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "babel-cli": "^6.26.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "react-scripts": "^1.1.4",
+    "react-motion": "^0.5.2"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
