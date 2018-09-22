@@ -30,7 +30,7 @@ class ItemRenderer extends React.Component {
               bottom: 0,
               overflow: "auto",
               backgroundColor: color,
-              transform: `translate3d(0,0,0) scale(${value.hover})`,
+              transform: `translate3d(0,0,0)`,
               opacity: value.opacity
             }}
           >

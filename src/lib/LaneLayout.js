@@ -13,7 +13,7 @@ import normalizeWheel from "normalize-wheel";
 import ReactResizeDetector from "react-resize-detector";
 import VisibilitySensor from "react-visibility-sensor";
 
-class Masonry extends React.Component {
+class LaneLayout extends React.Component {
   static propTypes = {
     /**
      * Config object for responsive behavior
@@ -159,6 +159,10 @@ class Masonry extends React.Component {
         defer(this._autoScroll);
       }
     }
+
+    if(newProps.horizontal !== this.props.horizontal) {
+      defer(this._onResize);
+    }
   }
 
   _autoScroll() {
@@ -174,7 +178,7 @@ class Masonry extends React.Component {
       container.scrollTop = scrollTop + scrollSpeed;
     }
 
-    if (autoScroll === true || isNumber(autoScroll)) {
+    if (autoScroll === true || isNumber(autoScroll) && autoScroll !== 0) {
       window.requestAnimationFrame(this._autoScroll);
     }
   }
@@ -300,8 +304,7 @@ class Masonry extends React.Component {
       return lastItem ? lastItem[prop1] + lastItem[prop2] : 0;
     });
 
-    const laneIndex = laneDimensions.indexOf(Math.min(...laneDimensions));
-    return laneIndex;
+    return laneDimensions.indexOf(Math.min(...laneDimensions));
   }
 
   _itemHeight({ laneCount }) {
@@ -524,6 +527,7 @@ class Masonry extends React.Component {
     const { items = [] } = this.props;
     const { mounted } = this.state;
 
+
     if (!items.length) {
       return null;
     }
@@ -554,4 +558,4 @@ class Masonry extends React.Component {
   }
 }
 
-export default Masonry;
+export default LaneLayout;
