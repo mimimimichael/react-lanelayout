@@ -1,0 +1,27 @@
+{
+  "name": "react-lanelayout",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "normalize-wheel": "1.0.1",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-motion": "0.5.2",
+    "react-resize-detector": "3.1.2",
+    "react-visibility-sensor": "latest"
+  },
+  "devDependencies": {
+    "react-scripts": "1.1.4",
+    "sinon": "6.3.4",
+    "enzyme": "3.6.0",
+    "enzyme-adapter-react-16": "1.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
