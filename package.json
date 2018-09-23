@@ -3,7 +3,15 @@
   "version": "0.1.1",
   "description": "A react component to display items with specific aspect ratios in horizontal or vertical lanes.",
   "homepage": "https://mimimimichael.github.io/react-lanelayout",
-  "keywords": ["react", "masonry", "layout",  "columns", "rows", "lanes", "react-lanelayout"],
+  "keywords": [
+    "react",
+    "masonry",
+    "layout",
+    "columns",
+    "rows",
+    "lanes",
+    "react-lanelayout"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -15,6 +23,7 @@
     "url": "https://github.com/mimimimichael/react-lanelayout"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "normalize-wheel": "1.0.1",
     "react-resize-detector": "3.1.2",
     "react-visibility-sensor": "4.1.1"
