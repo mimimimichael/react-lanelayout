@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "normalize-wheel": "1.0.1",
-    "react-resize-detector": "3.1.2",
-    "react-visibility-sensor": "4.1.1"
+    "normalize-wheel": "^1.0.1",
+    "react-resize-detector": "^3.1.2",
+    "react-visibility-sensor": "^4.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
