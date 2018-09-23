@@ -2,7 +2,7 @@ react-lanelayout is not quite ready for primetime yet. Thank you. Come again.
 
 ---
 
-![alt text](https://i.imgur.com/JMnadmn.png "React Lane Layout")
+![alt text](https://i.imgur.com/fECSINd.png "react-lanelayout")
 # react-lanelayout
 
 A component to display items with specific aspect ratios in horizontal or vertical lanes.
