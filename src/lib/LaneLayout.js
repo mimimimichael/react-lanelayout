@@ -67,11 +67,27 @@ class LaneLayout extends React.Component {
   static defaultProps = {
     debug: false,
     horizontal: false,
-    gutter: 0,
-    outerGutter: false,
+    gutter: 16,
+    outerGutter: true,
     itemRenderer: () => null,
     onEnd: () => null,
-    autoScroll: false
+    autoScroll: false,
+    lanes: {
+      vertical: {
+        0: 1,   // 1 lane  if the component is less than 480px wide
+        480: 2, // 2 lanes if the component is min. 480px wide
+        720: 3, // 3 lanes if the component is min. 720px wide
+        960: 4,
+        1200: 5
+      },
+      horizontal: {
+        0: 1,   // 1 lane when the component is less than 480px in height
+        480: 2, // 2 lanes when the component is min 480px in height
+        720: 3, // 3 lanes when the component is min 720px in height
+        960: 4,
+        1200: 5
+      }
+    }
   };
 
   constructor() {
@@ -257,7 +273,7 @@ class LaneLayout extends React.Component {
    * Returns the Containers' CSS
    */
   _containerStyles() {
-    const { debug } = this.props;
+    const { debug, horizontal } = this.props;
 
     return {
       position: "absolute",
@@ -270,6 +286,8 @@ class LaneLayout extends React.Component {
       outline: debug && "1px solid tomato",
       transform: "translate3d(0,0,0)",
       overflow: "auto",
+      overflowX: !horizontal && 'hidden',
+      overflowY: horizontal && 'hidden',
       /** iOS specific scroll behavior instructions  */
       overflowScrolling: "touch",
       WebkitOverflowScrolling: "touch"

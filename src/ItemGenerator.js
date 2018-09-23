@@ -12,7 +12,8 @@ export default count => {
       ratio: sample([4 / 3, 16 / 9, 1]),
       itemProps: {
         id,
-        color: `hsl(${currentHue % 360}, 50%, 50%)`
+        color: `hsl(${currentHue % 360}, 50%, 50%)`,
+        color2: `hsl(${currentHue % 360}, 100%, 12%)`,
       }
     };
   });

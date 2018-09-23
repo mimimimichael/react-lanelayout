@@ -95,25 +95,6 @@ class App extends React.Component {
         <LaneLayout
           items={items}
           horizontal={horizontal}
-          lanes={{
-            vertical: {
-              0: 1,
-              360: 2,
-              640: 2,
-              960: 3,
-              1280: 4,
-              1400: 5,
-              1720: 6,
-              2040: 7,
-              2360: 8
-            },
-            horizontal: {
-              0: 1,
-              480: 2,
-              640: 3,
-              960: 4
-            }
-          }}
           debug={false}
           gutter={parseInt(gutter)}
           outerGutter={outerGutter}

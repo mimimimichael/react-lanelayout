@@ -9,7 +9,7 @@ class ItemRenderer extends React.Component {
     };
   }
   render() {
-    const { id, color } = this.props;
+    const { id, color, color2 } = this.props;
     const { hover } = this.state;
 
     return (
@@ -31,7 +31,7 @@ class ItemRenderer extends React.Component {
               overflow: "auto",
               backgroundColor: color,
               transform: `translate3d(0,0,0)`,
-              opacity: value.opacity
+
             }}
           >
             <div
@@ -40,13 +40,14 @@ class ItemRenderer extends React.Component {
                 top: 0,
                 left: 0,
                 padding: ".5rem",
-                backgroundColor: "black",
+                backgroundColor: color2,
                 color: "white",
+                fontWeight: 'bold',
                 fontFamily:
                   '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
               }}
             >
-              #{id} {hover ? "hover" : ""}
+              #{id}
             </div>
           </div>
         )}
