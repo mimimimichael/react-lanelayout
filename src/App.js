@@ -13,7 +13,7 @@ import ApiDemoPage from './pages/ApiDemo'
 import BrandStormerPage from './pages/BrandStormer'
 
 // Quickfix
-const basename = !includes(window.location.hostname, 'localhost') ? false : '/react-lanelayout';
+const basename = process.env.NODE_ENV === 'development' ? null : '/react-lanelayout';
 
 class App extends React.Component {
 
