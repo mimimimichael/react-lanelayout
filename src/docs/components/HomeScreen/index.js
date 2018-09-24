@@ -18,8 +18,14 @@ const demos = [
   },
   {
     id: 3,
+    label: 'Photo Stream',
+    description: 'And endless stream of photos. Uses react-motion to add an entrance-animation. For performance reason images are sampled and repeated.',
+    link: '/photo-stream'
+  },
+  {
+    id: 4,
     label: 'Brand Stormer',
-    description: 'Uses Google Fonts and randomness to generate fancy "logos". <LaneLayout/> is used to display and scroll through the results.',
+    description: 'Uses Google Fonts and randomness to generate fancy "logos".',
     link: '/brand-stormer'
   }
 ];

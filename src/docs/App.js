@@ -14,6 +14,7 @@ import HomeScreen from './components/HomeScreen';
 import ApiDemoDemo from './demos/ApiDemo'
 import MinimalSetupDemo from './demos/MinimalExample'
 import BrandStormerDemo from './demos/BrandStormer'
+import PhotoStream from './demos/PhotoStream'
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -38,6 +39,9 @@ const App = () => (
                 <NavLink to="/minimal-example">Minimal Example</NavLink>
               </Box>
               <Box>
+                <NavLink to="/photo-stream">Photo Stream</NavLink>
+              </Box>
+              <Box>
                 <NavLink to="/brand-stormer">Brand Stormer</NavLink>
               </Box>
             </Flex>
@@ -49,6 +53,7 @@ const App = () => (
             <Route exact path="/api-demo" component={ApiDemoDemo}/>
             <Route path="/minimal-example" component={MinimalSetupDemo}/>
             <Route path="/brand-stormer" component={BrandStormerDemo}/>
+            <Route path="/photo-stream" component={PhotoStream}/>
           </div>
         </Box>
       </Flex>
