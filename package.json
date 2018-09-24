@@ -29,6 +29,7 @@
     "react-visibility-sensor": "^4.1.1"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "chroma-js": "^1.4.0",
     "clean-tag": "^2.0.0",
