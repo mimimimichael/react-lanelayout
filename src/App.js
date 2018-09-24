@@ -6,7 +6,7 @@ import {Flex, Box } from 'rebass'
 import Text from './components/Text'
 import NavBar from './components/NavBar'
 import NavLink from './components/NavLink'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 // Pages
 import ApiDemoPage from './pages/ApiDemo'
