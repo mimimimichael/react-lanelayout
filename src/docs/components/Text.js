@@ -10,6 +10,6 @@ const Text = styled(tag)`
   ${fontFamily}
   ${color}
   display: ${({block})=> block ? 'block' : 'inline-block'};
-`
+`;
 
 export default Text;

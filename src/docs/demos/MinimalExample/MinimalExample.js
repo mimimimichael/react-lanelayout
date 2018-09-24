@@ -3,7 +3,7 @@ import uniqueId from 'lodash/uniqueId';
 import sample from 'lodash/sample';
 
 import React from 'react'
-import LaneLayout from './../../lib/LaneLayout'
+import LaneLayout from '../../../lib/LaneLayout'
 
 class MinimalExample extends React.Component {
   constructor() {
@@ -18,7 +18,10 @@ class MinimalExample extends React.Component {
     return times(20, ()=>{
       return {
         key: uniqueId(),
-        ratio: sample([1, 4/3, 3/4, 16 / 9])
+        ratio: sample([1, 4/3, 3/4, 16 / 9]),
+        itemProps: {
+          // here you would put your actual items' props
+        }
       }
     });
   }

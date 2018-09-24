@@ -3,13 +3,13 @@ import chroma from 'chroma-js';
 import { sample, isObject } from "lodash";
 import { Flex, Box, Provider } from "rebass";
 
-import Container from "./components/Container";
-import Variator from "./components/Variator";
+import Container from "./components/Container/index";
+import Variator from "./components/Variator/index";
 import fonts from "./components/fonts";
-import TextInput from "./components/TextInput";
-import Button from "./components/Button";
+import TextInput from "./components/TextInput/index";
+import Button from "./components/Button/index";
 
-import LaneLayout from './../../lib/LaneLayout'
+import LaneLayout from '../../../lib/LaneLayout'
 
 
 
