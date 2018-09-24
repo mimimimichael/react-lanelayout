@@ -12,16 +12,13 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import ApiDemoPage from './pages/ApiDemo'
 import BrandStormerPage from './pages/BrandStormer'
 
-// Quickfix
-const basename = process.env.NODE_ENV === 'development' ? null : '/react-lanelayout';
-
 class App extends React.Component {
 
 
   render() {
 
     return (
-      <Router basename={basename}>
+      <Router>
         <Flex flexDirection="column" style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0}}>
           <Box flex="0 0 auto">
             <NavBar>
