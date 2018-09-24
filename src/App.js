@@ -1,5 +1,4 @@
 import './reset.css';
-import includes from 'lodash/includes'
 import packageJson from './../package.json'
 import React from "react";
 import {Flex, Box } from 'rebass'
@@ -10,6 +9,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 
 // Pages
 import ApiDemoPage from './pages/ApiDemo'
+import MinimalSetup from './pages/MinimalExample'
 import BrandStormerPage from './pages/BrandStormer'
 
 class App extends React.Component {
@@ -32,6 +32,9 @@ class App extends React.Component {
                   <NavLink exact to="/">API Demo</NavLink>
                 </Box>
                 <Box>
+                  <NavLink to="/minimal-setup">Minimal Setup</NavLink>
+                </Box>
+                <Box>
                   <NavLink to="/brand-stormer">Brand Stormer</NavLink>
                 </Box>
               </Flex>
@@ -40,6 +43,7 @@ class App extends React.Component {
           <Box flex="1 1 auto" style={{position: 'relative'}}>
             <div>
               <Route exact path="/" component={ApiDemoPage} />
+              <Route path="/minimal-setup" component={MinimalSetup} />
               <Route path="/brand-stormer" component={BrandStormerPage} />
             </div>
           </Box>
