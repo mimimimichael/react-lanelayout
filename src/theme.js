@@ -7,6 +7,7 @@ export default {
     textColor: 'white'
   },
   colors: {
+    white: '#fff',
     blue: '#07c',
     lightgray: '#f6f6ff'
   },

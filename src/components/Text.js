@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { space, width, fontSize, fontWeight, fontFamily, color } from 'styled-system'
+import { space, fontSize, fontWeight, fontFamily, color } from 'styled-system'
 import tag from 'clean-tag'
 
 const Text = styled(tag)`
@@ -8,6 +8,7 @@ const Text = styled(tag)`
   ${fontSize}
   ${fontWeight}
   ${fontFamily}
+  ${color}
   display: ${({block})=> block ? 'block' : 'inline-block'};
 `
 
