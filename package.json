@@ -1,6 +1,6 @@
 {
   "name": "react-lanelayout",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A react component to display items with specific aspect ratios in horizontal or vertical lanes.",
   "homepage": "https://mimimimichael.github.io/react-lanelayout",
   "keywords": [
