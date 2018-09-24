@@ -1,4 +1,5 @@
 import './reset.css';
+import includes from 'lodash/includes'
 import packageJson from './../package.json'
 import React from "react";
 import {Flex, Box } from 'rebass'
@@ -11,13 +12,16 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import ApiDemoPage from './pages/ApiDemo'
 import BrandStormerPage from './pages/BrandStormer'
 
+// Quickfix
+const basename = !includes(window.location.hostname, 'localhost') ? false : '/react-lanelayout';
+
 class App extends React.Component {
 
 
   render() {
 
     return (
-      <Router>
+      <Router basename={basename}>
         <Flex flexDirection="column" style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0}}>
           <Box flex="0 0 auto">
             <NavBar>
