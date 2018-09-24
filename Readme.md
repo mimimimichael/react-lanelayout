@@ -1,7 +1,3 @@
-react-lanelayout is not quite ready for primetime yet. Thank you. Come again.
-
----
-
 ![alt text](https://i.imgur.com/fECSINd.png "react-lanelayout")
 # react-lanelayout
 
